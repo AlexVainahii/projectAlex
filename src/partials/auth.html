@@ -1,0 +1,22 @@
+<button type="button" data-sign="SignIn">Sign in</button>
+<div class="backdrop is-hidden" data-backdrop="backdrop">
+  <div class="modal">
+    <button type="submit" class="modal__close-btn" data-modal-close>
+      <svg class="modal__close-icon" width="30px" height="30px">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="login-form">
+      <label>
+        Email
+        <input type="email" name="email" data-email="email" />
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" data-password="password" />
+      </label>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+<script src="./js/auth.js" type="module"></script>
