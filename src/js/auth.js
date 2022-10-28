@@ -1,5 +1,5 @@
 import { refs } from './refs';
-/* import { initializeApp } from 'firebase/app';
+import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
 
 const firebaseConfig = {
@@ -10,11 +10,11 @@ const firebaseConfig = {
   messagingSenderId: '747352375066',
   appId: '1:747352375066:web:bfd52aa1c7f0703dcff6a3',
   measurementId: 'G-XPVPECFXHK',
-}; */
+}; 
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+ const app = initializeApp(firebaseConfig);
+ const analytics = getAnalytics(app);
 function closeModal() {
   refs.bckDrop.classList.add('is-hidden');
 }
