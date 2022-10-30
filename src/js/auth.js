@@ -86,8 +86,9 @@ function signOutSystems() {
       // An error happened.
     });
 }
-function signGoogleSystems() {
-  const auth = getAuth();
+function signGoogleSystems(event) {
+  event.preventDefault;
+
   signInWithPopup(auth, provider)
     .then(result => {
       // This gives you a Google Access Token. You can use it to access the Google API.
@@ -110,7 +111,8 @@ function signGoogleSystems() {
       // ...
     });
 }
-function signFaceSystems() {
+function signFaceSystems(event) {
+  event.preventDefault;
   signInWithPopup(auth, provider1)
     .then(result => {
       // The signed-in user info.
@@ -134,6 +136,7 @@ function signFaceSystems() {
       // ...
     });
 }
+console.log(refs.signOutBtn);
 
 refs.signBtn.addEventListener('click', openModal);
 refs.closeBtn.addEventListener('click', closeModal);

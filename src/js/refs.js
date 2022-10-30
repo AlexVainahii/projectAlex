@@ -7,6 +7,6 @@ export const refs = {
   signUpBtn: document.querySelector('button[data-signup]'),
   inputEmail: document.querySelector('[data-email]'),
   inputPass: document.querySelector('[data-password]'),
-  googleBtn: document.querySelector('[data-google]'),
-  faseBtn: document.querySelector('[data-fasebook]'),
+  googleBtn: document.querySelector('button[data-google]'),
+  faseBtn: document.querySelector('button[data-fasebook]'),
 };
