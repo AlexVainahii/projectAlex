@@ -111,7 +111,7 @@ function signGoogleSystems(event) {
       // ...
     });
 }
-function signFaceSystems(event) {
+function signFaceSystems() {
   event.preventDefault;
   signInWithPopup(auth, provider1)
     .then(result => {
@@ -136,7 +136,7 @@ function signFaceSystems(event) {
       // ...
     });
 }
-console.log(refs.signOutBtn);
+console.log(refs.googleBtn);
 
 refs.signBtn.addEventListener('click', openModal);
 refs.closeBtn.addEventListener('click', closeModal);
